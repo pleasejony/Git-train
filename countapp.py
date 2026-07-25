@@ -9,7 +9,6 @@ if st.button("1減少"):
     st.session_state.count-=1
     st.write("カウントを1減らしました")
 if st.button("リセット"):
-    if st.button("カウントをリセットしてもよろしいでしょうか"):
-        st.session_state.count=0
-        st.write("カウントを0にリセットしました")
+    st.session_state.count=0
+    st.write("カウントを0にリセットしました")
 st.write(f"現在の数値:{st.session_state.count}")
